@@ -26,7 +26,7 @@ in the ALLPLAN Library:
 
 Besides the library, the PythonPart can also be found in the ActionBar in a newly created task area **EcoBalance** inside the task **Plug-ins**.
 
-Whereas the location of all otherfiles has to be kept, the **Excel table** can arbitrary be copied or moved and even be renamed afterwards.
+Whereas the location of all other files has to be kept, the **Excel table** can arbitrary be copied or moved and even be renamed afterwards.
 
 ## Preparation
 
@@ -38,9 +38,16 @@ Available materials are listed in the **Name (de)** or **Name (en)** columns of 
 
 In general, all installed PythonParts can be found in the Library palette, no matter if an additional ActionBar entry is created or not. They are started either with a **double-click** on the icon or per **Drag and Drop** into the viewport. This shows the corresponding Properties palette and executes the underlying skripts.
 
-> ⚠️IMPORTANT\
-> [!Tip]
-The status and content of the Excel file might have been changed slightly since the release of the PythonPart. Whereas the content can be updated or enlarged, the existing structure of the file has to be kept **unchanged**. Otherwise the PythonPart might no longer work accurate.
+> 💡HINT\
+The idividual functions of the PythonPart can be used independend. So it is **not** necessary to assign GWP_ or AP_ attributes to show a diagram or create a data sheet. All relevant material parameters are always looked up in the Excel file.
 
-The palette is divided into a general part on the top which is relevant for all 
+The palette is divided into a general part on the top which is relevant for all and individual sections for each function. Therefor the first step is always to select the **file** and **sheet** of the **Ecobaudat_Database.xlsx**.
+
+Besides the material as such, the GWP_ and AP_value also depends on the **Modus** that should be taken into account for calculation and evaluation. It is defined in the Pulldown of the same name.
+
+> ⚠️IMPORTANT\
+As the Excel file is very large, it can take some time to load the list of available modi.
+
+Depending on the material name column used, the appropriate language as well as the ALLPLAN attribute in which the value has been entered are defined in the **General settings** section. The objects to be considered are choosen afterwards in clicking on the slect button. All common ALLPLAN option like filering or area input are available for the selection.
+
 
