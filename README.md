@@ -52,10 +52,10 @@ As the Excel file is very large, it can take some time to load the list of avail
 
 Depending on the material name column (de/en) used, the appropriate **language** as well as the **ALLPLAN attribute** in which the value has been entered are defined in the **General settings** section.
 
-<img src = "./docs/AllplanMaterialValue.png" width = 300/>
+<img src = "./docs/AllplanMaterialValue.png" width = 250/>
 
 
-<img src = "./docs/MaterialKeyAttribute.png" width = 300/>
+<img src = "./docs/MaterialKeyAttribute.png" width = 250/>
 
 The objects to be considered are choosen afterwards in clicking on the **select** button. All common ALLPLAN options like filtering or area input are available for the selection. After the selection, the PythonParts provides different further options, but no matter which one should be used, all of the previous described steps are **mandatory** to go on.
 
@@ -72,7 +72,7 @@ The elevation of the selected objects ecological impact is carried out either as
 
 In clicking the appropriate button, the **diagram** is shown in a separate window. From there it can also be saved as image file.
 
-<img src = "./docs/DiagramPicture.png" width = 300/>
+<img src = "./docs/DiagramPicture.png" width = 400/>
 
 For the **data sheets** there is the option to use already existing or create new Excel files in setting file location and folder name. In clicking the **create** button the data is finaly written to the choosen file. 
 
