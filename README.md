@@ -72,7 +72,7 @@ The elevation of the selected objects ecological impact is carried out either as
 
 In clicking the appropriate button, the **diagram** is shown in a separate window. From there it can also be saved as image file.
 
-<img src = "./docs/DiagramPicture.png" width = 400/>
+<img src = "./docs/DiagramPicture.png" width = 600/>
 
 For the **data sheets** there is the option to use already existing or create new Excel files in setting file location and folder name. In clicking the **create** button the data is finaly written to the choosen file. 
 
