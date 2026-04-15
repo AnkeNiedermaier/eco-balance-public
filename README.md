@@ -26,13 +26,15 @@ in the ALLPLAN Library:
 
 Besides the library, the PythonPart can also be found in the ActionBar in a newly created task area **EcoBalance** inside the task **Plug-ins**.
 
-Whereas the location of all other files has to be kept, the **Excel table** can arbitrary be copied or moved and even be renamed afterwards.
+Whereas the location of all other files has to be kept, the **Excel table** can arbitrary be copied or moved into another folder and even be renamed afterwards.
 
 ## Preparation
 
-To use the different functions of the PythonPart, all objects that should be considered need appropriate material information. Therfor the first step is to pick up the relevant material name from the **Excel file** and add it as value to the choosen **material key** attribute.
+To use the different functions of the PythonPart, all objects that should be considered need **appropriate material information**. Therfor the first step is to pick up the relevant material name from the **Excel file** and add it as value to the choosen **material key** attribute.
 
 Available materials are listed in the **Name (de)** or **Name (en)** columns of the table. Which ALLPLAN attribute is used as **material key** is free of choice, but always using the same is highly recommended. Otherwise the objects can not be evaluated togehter.
+
+<img src = "./docs/MaterialColumns.png" width = 400/>
 
 ## Workflow
 
@@ -48,6 +50,33 @@ Besides the material as such, the GWP_ and AP_value also depends on the **Modus*
 > ⚠️IMPORTANT\
 As the Excel file is very large, it can take some time to load the list of available modi.
 
-Depending on the material name column used, the appropriate language as well as the ALLPLAN attribute in which the value has been entered are defined in the **General settings** section. The objects to be considered are choosen afterwards in clicking on the slect button. All common ALLPLAN option like filering or area input are available for the selection.
+Depending on the material name column (de/en) used, the appropriate **language** as well as the **ALLPLAN attribute** in which the value has been entered are defined in the **General settings** section.
+
+<img src = "./docs/AllplanMaterialValue.png" width = 300/>
+
+
+<img src = "./docs/MaterialKeyAttribute.png" width = 300/>
+
+The objects to be considered are choosen afterwards in clicking on the **select** button. All common ALLPLAN options like filtering or area input are available for the selection. After the selection, the PythonParts provides different further options, but no matter which one should be used, all of the previous described steps are **mandatory** to go on.
+
+### Assign attributes
+
+The selected objects can be provided with the relevant **eco parameters** of their material. Which attributes should be assigned can be selected with the CheckBoxes and in clicking the **assign** button the assignment is finaly taken out.
+
+### Evaluate objects
+
+The elevation of the selected objects ecological impact is carried out either as **Excel data sheets** or **diagrams**. In addition there is a choice between
+- **overview** of all **relevant parameters** including object name, object weight and IfcID
+- GWP_ and AP_values sorted by **object type**
+- GWP_ and AP_values sorted by **material**
+
+In clicking the appropriate button, the **diagram** is shown in a separate window. From there it can also be saved as image file.
+
+<img src = "./docs/DiagramPicture.png" width = 300/>
+
+For the **data sheets** there is the option to use already existing or create new Excel files in setting file location and folder name. In clicking the **create** button the data is finaly written to the choosen file. 
+
+> ⚠️IMPORTANT\
+As the **Ecobaudat_Database.xlsx** file is very large, it can take a while to create the diagram or calculate and write the data sheet.
 
 
